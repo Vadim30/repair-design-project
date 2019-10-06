@@ -3,7 +3,7 @@ body {
 }
 .header {
   padding: 20px 100px 24px 82px;
-  background-color: #131313;
+  background-color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +32,12 @@ body {
 .header__navigation-link:nth-child(6) {
   margin-right: 0;
 }
+.header__navigation-link:hover {
+  color: #E3B873;
+}
+.header__navigation-link:active {
+  color: #fff;
+}
 .header__tel {
   font-family: "FuturaDemiC", sans-serif;
   font-size: 14px;
@@ -56,6 +62,7 @@ body {
   height: 37px;
   background: #E3B873;
   outline: 0;
+  border: 0;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
 }
@@ -66,4 +73,96 @@ body {
 .header__request:active {
   background-color: #E3B873;
   color: #fff;
+}
+.block-rostov {
+  display: flex;
+  background: rgba(0, 0, 0, 0.75) url(../assets/img/bi-header.png) no-repeat;
+  background-position: 82px;
+  background-size: cover;
+  background-blend-mode: hard-light;
+}
+.instagram {
+  position: relative;
+  background-color: #000;
+  height: 706px;
+  width: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.instagram:hover {
+  opacity: 0.9;
+}
+.instagram:hover .instagram__title {
+  color: #fff;
+}
+.instagram__title {
+  color: #E3B873;
+  position: absolute;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+.instagram__title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #E3B873;
+  position: absolute;
+  right: -65px;
+  top: 8px;
+}
+.repair {
+  padding: 200px 0 0 60px;
+}
+.repair__title {
+  font-family: "Yeseva One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 590px;
+  margin: 0 0 30px 0;
+}
+.repair mark {
+  color: #E3B873;
+  background-color: transparent;
+}
+.repair__desc {
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.repair__calculate,
+.repair__application {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  background: transparent;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  width: 207px;
+  height: 51px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  outline: 0;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.repair__calculate:hover,
+.repair__application:hover {
+  background: #E3B873;
+  border-color: #E3B873;
+}
+.repair__calculate:active,
+.repair__application:active {
+  background: transparent;
+  border-color: #FFFFFF;
 }
